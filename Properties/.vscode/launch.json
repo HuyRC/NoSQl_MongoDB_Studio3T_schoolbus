@@ -1,0 +1,19 @@
+﻿{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET API (open Swagger)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/Debug/net9.0/SchoolBusApi.dll",
+      "cwd": "${workspaceFolder}",
+      "env": { "ASPNETCORE_URLS": "http://localhost:5100" },
+      "preLaunchTask": "build",
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "Now listening on:\\s+(https?://\\S+)",
+        "uriFormat": "http://localhost:5100/swagger"
+      }
+    }
+  ]
+}
